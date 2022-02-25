@@ -1,0 +1,30 @@
+PODS:
+  - HcdProcessView (1.0.0)
+  - MBCircularProgressBar (0.3.5)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - HcdProcessView (= 1.0.0)
+  - MBCircularProgressBar
+  - SwiftGifOrigin
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - HcdProcessView
+    - MBCircularProgressBar
+    - SwiftGifOrigin
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  HcdProcessView: d48587d9f15f14f7a168acf898032cc136a1ff29
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: a5442ffd03502bbe29090afdac104e6d2f6f6ada
+
+COCOAPODS: 1.11.2

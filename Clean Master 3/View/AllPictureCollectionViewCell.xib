@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AllPictureCollectionViewCell" customModule="Clean_Master_3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="448"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="503" height="448"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-A7-SxU">
+                        <rect key="frame" x="0.0" y="0.0" width="503" height="448"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-f2-Ty3">
+                                <rect key="frame" x="0.0" y="0.0" width="503" height="448"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unTick" translatesAutoresizingMaskIntoConstraints="NO" id="gFx-IN-5l2">
+                                <rect key="frame" x="448" y="10" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gFx-IN-5l2" secondAttribute="height" multiplier="1:1" id="aTX-Wv-HzP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pqi-f2-Ty3" secondAttribute="bottom" id="GTK-Gx-xJQ"/>
+                            <constraint firstItem="pqi-f2-Ty3" firstAttribute="leading" secondItem="fK0-A7-SxU" secondAttribute="leading" id="KwA-Te-Teu"/>
+                            <constraint firstItem="pqi-f2-Ty3" firstAttribute="top" secondItem="fK0-A7-SxU" secondAttribute="top" id="MeP-f8-FDI"/>
+                            <constraint firstItem="gFx-IN-5l2" firstAttribute="height" secondItem="fK0-A7-SxU" secondAttribute="height" multiplier="0.1" id="QPa-kb-emP"/>
+                            <constraint firstAttribute="trailing" secondItem="gFx-IN-5l2" secondAttribute="trailing" constant="10" id="UQ4-jW-8rK"/>
+                            <constraint firstItem="gFx-IN-5l2" firstAttribute="top" secondItem="fK0-A7-SxU" secondAttribute="top" constant="10" id="jYO-ai-MTn"/>
+                            <constraint firstAttribute="trailing" secondItem="pqi-f2-Ty3" secondAttribute="trailing" id="oNk-0U-SXG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="fK0-A7-SxU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gjt-yX-H3k"/>
+                <constraint firstItem="fK0-A7-SxU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QWy-pW-4X9"/>
+                <constraint firstItem="fK0-A7-SxU" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="UcW-jE-kyU"/>
+                <constraint firstItem="fK0-A7-SxU" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="hyO-fC-iJu"/>
+            </constraints>
+            <size key="customSize" width="503" height="448"/>
+            <connections>
+                <outlet property="imgChild" destination="pqi-f2-Ty3" id="X66-mD-egC"/>
+                <outlet property="imgTick" destination="gFx-IN-5l2" id="MWM-Hi-LMR"/>
+            </connections>
+            <point key="canvasLocation" x="389.13043478260875" y="182.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_unTick" width="223" height="223"/>
+    </resources>
+</document>

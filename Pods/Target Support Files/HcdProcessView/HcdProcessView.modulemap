@@ -1,0 +1,6 @@
+framework module HcdProcessView {
+  umbrella header "HcdProcessView-umbrella.h"
+
+  export *
+  module * { export * }
+}
